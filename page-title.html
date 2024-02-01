@@ -1,7 +1,7 @@
 <html>
   <head>
     <script type="text/javascript">
-      document.title = u.searchParams.get('title');
+      document.title = new URL(location.href).searchParams.get('title');
     </script>
   </head>
 </html>
